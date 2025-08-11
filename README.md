@@ -55,7 +55,7 @@ streamlit run app.py
 
 ## Architecture Overview
 
-![Conversational RAG Workflow](workflow.png)
+![Conversational RAG Workflow](./workflow.png)
 
 *The above diagram illustrates the complete workflow from PDF upload to conversational responses with maintained chat history.*
 
