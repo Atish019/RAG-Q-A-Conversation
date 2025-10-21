@@ -16,42 +16,6 @@ A Streamlit-based Retrieval-Augmented Generation (RAG) application that allows u
 - Groq API key
 - HuggingFace token (optional, for embeddings)
 
-## Installation
-
-1. Clone the repository:
-```bash
-git clone <your-repo-url>
-cd <RAG-Q&A-Conversation>
-```
-
-2. Install required dependencies:
-```bash
-pip install streamlit langchain langchain-community langchain-groq langchain-huggingface
-pip install chromadb pypdf python-dotenv
-```
-
-3. Set up environment variables:
-Create a `.env` file in the root directory:
-```env
-HF_TOKEN=your_huggingface_token_here
-```
-
-## Usage
-
-1. Start the Streamlit application:
-```bash
-streamlit run app.py
-```
-
-2. Open your browser and navigate to the provided local URL (typically `http://localhost:8501`)
-
-3. Enter your Groq API key in the password field
-
-4. (Optional) Set a custom Session ID for your conversation
-
-5. Upload one or more PDF documents using the file uploader
-
-6. Start asking questions about the uploaded documents
 
 ## Architecture Overview
 
@@ -114,21 +78,6 @@ project/
 └── README.md             # This file
 ```
 
-## Dependencies
-
-```txt
-streamlit
-langchain
-langchain-community
-langchain-groq
-langchain-huggingface
-chromadb
-pypdf
-python-dotenv
-```
-
-## Troubleshooting
-
 ### Common Issues
 
 1. **API Key Errors**: Ensure your Groq API key is valid and has sufficient credits
@@ -148,11 +97,3 @@ python-dotenv
 - Vector store is recreated for each session (not persistent)
 - Limited to PDF documents only
 - Response length is constrained to 3 sentences
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
